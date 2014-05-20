@@ -1,8 +1,7 @@
-#Mokklook.com
+#Grunt - Angular - Bootstrap
 
-####Mokklook website
+####A grunt-enabled template that gets you started with Angular & bootstrap
 
-Src for http://www.mokklook.com
 
 * run 'npm install' to update
 
