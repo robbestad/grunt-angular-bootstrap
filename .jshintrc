@@ -1,0 +1,14 @@
+{
+    "supernew": true,
+    "globalstrict": false,
+    "globals": {
+        "angular": false,
+        /* MOCHA */
+        "describe": false,
+        "it": false,
+        "before": false,
+        "beforeEach": false,
+        "after": false,
+        "afterEach": false
+    }
+}
