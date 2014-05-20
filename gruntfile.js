@@ -49,13 +49,6 @@ module.exports = function (grunt) {
 
             }
         },
-        sass: {
-            dist: {
-                files: {
-                    'public/css/app.css': 'scss/app.scss'
-                }
-            }
-        },
 
         cssmin: {
             combine: {

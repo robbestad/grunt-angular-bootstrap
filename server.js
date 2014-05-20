@@ -17,18 +17,17 @@ var express = require('express'),
     app = express('');
 
 // define model =================
-var Todo = mongoose.model('Todo', {
+var Todo = mongoose.model('myApp', {
     text: String
 });
 // configuration =================
 
-mongoose.connect('mongodb://127.0.0.1/mokklook'); 	// connect to mongoDB database on modulus.io
+mongoose.connect('mongodb://127.0.0.1/myDb'); 	// connect to mongoDB database on modulus.io
 
 
 app.configure(function () {
     app.use(express.static(__dirname + '/public')); 		// set the static files location /public/img will be /img for users
     app.use(express.logger('dev')); 						// log every request to the console
-//    app.use(express.bodyParser());
     app.use(express.urlencoded());                          // pull information from html in POST
     app.use(express.json());
     app.use(express.methodOverride()); 						// simulate DELETE and PUT
