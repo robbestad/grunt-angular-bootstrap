@@ -7,6 +7,7 @@
 
 * Run 'grunt' when you develop
   * The css is auto-generated when you make changes to the less files
+  * The javascript files are linted when you make changes
 
 * Deploy with 'forever start server.js'
 
