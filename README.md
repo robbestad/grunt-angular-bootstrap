@@ -1,6 +1,6 @@
-#Grunt - Angular - Bootstrap - Less
+#Grunt - Express - Angular - Bootstrap - Less 
 
-####A grunt-enabled template that gets you started with Angular & Bootstrap
+####A starter project getting up and running with AngularJS, Express, Bootstrap, Grunt and Less
 
 
 * Run 'npm install' to download dependencies

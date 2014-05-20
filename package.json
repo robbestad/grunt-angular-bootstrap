@@ -1,10 +1,10 @@
 {
-    "name": "angularjs-template",
+    "name": "grunt-angular-bootstrap",
     "private": true,
-    "version": "0.0.2",
+    "version": "0.1.0",
     "description": "Angularjs template",
-    "repository": "https://github.com/angular/angular-seed",
-    "license": "Private",
+    "repository": "https://github.com/svenanders/grunt-angular-bootstrap",
+    "license": "Creative Commons",
     "devDependencies": {
         "express": "~3.4.4",
         "karma": "~0.10",
