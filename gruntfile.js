@@ -11,6 +11,8 @@ module.exports = function (grunt) {
         watch: {
             server: {
                 files: ['.rebooted'],
+
+                ignoredFiles: ['node_modules/**/*.js'],
                 options: {
                     livereload: true
                 }
