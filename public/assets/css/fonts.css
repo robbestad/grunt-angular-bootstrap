@@ -1,0 +1,563 @@
+/*
+ * Fonts
+ */
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot');
+  src: url('font/fontello.eot#iefix') format('embedded-opentype'), url('font/fontello.woff') format('woff'), url('font/fontello.ttf') format('truetype'), url('font/fontello.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 16, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+}
+/* line 30, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.icon-github-circled:before {
+  content: '\e800';
+}
+/* line 31, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.icon-twitter:before {
+  content: '\e801';
+}
+/*
+ * Scaffolding and type
+ */
+/* line 39, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 47, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+html {
+  font-size: 16px;
+}
+@media (min-width: 40em) {
+  /* line 51, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+  html {
+    font-size: 20px;
+  }
+}
+/* line 56, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+body {
+  margin: 0;
+  padding: 2rem 1.5rem;
+  font: 1rem/1.5 "PT Sans", Arial, sans-serif;
+  color: #5a5a5a;
+}
+/* Override for form controls */
+/* line 64, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+label,
+input,
+select,
+button {
+  font: 1rem/1.5 "Helvetica Neue", Arial, sans-serif;
+}
+/* line 71, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+/* line 75, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+a:hover {
+  text-decoration: underline;
+}
+/* line 79, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 .5rem;
+  font-weight: normal;
+  line-height: 1;
+  color: #2a2a2a;
+  letter-spacing: -0.05em;
+}
+/* line 86, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+h1 {
+  font-size: 3rem;
+}
+/* line 87, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+h2 {
+  font-size: 2.5rem;
+}
+/* line 88, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+h3 {
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+/* line 89, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+h4 {
+  font-size: 1.25rem;
+}
+/* line 91, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+p {
+  margin: 0 0 1rem;
+}
+/* line 94, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.lead {
+  font-size: 1.3rem;
+}
+/* line 98, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+blockquote {
+  position: relative;
+  margin: 0 1rem 1rem;
+  font-style: italic;
+  color: #7a7a7a;
+}
+/* line 104, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+blockquote p {
+  margin-bottom: 0;
+}
+/* line 108, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+ul li {
+  margin-bottom: .25rem;
+}
+/* Tighten up margin on last items */
+/* line 113, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+p:last-child,
+ul:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+/*
+ * Code
+ */
+/* line 125, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+code,
+pre {
+  font-family: "PT Mono", Menlo, "Courier New", monospace;
+  font-size: 95%;
+}
+/* line 130, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+code {
+  padding: 2px 4px;
+  font-size: 85%;
+  color: #d44950;
+  background-color: #f7f7f9;
+  border-radius: .2rem;
+}
+/* line 138, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+pre {
+  display: block;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+}
+/* line 145, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+/* line 151, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.highlight {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  background-color: #f7f7f9;
+}
+/* line 156, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.highlight pre {
+  margin-bottom: 0;
+}
+/* line 159, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.highlight + .highlight {
+  margin-top: 1rem;
+}
+/*
+ * The Grid
+ */
+/* line 168, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.container {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+ * Masthead
+ */
+/* line 179, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+/* line 183, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead h1 {
+  margin-bottom: .25rem;
+}
+/* line 186, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead .icon {
+  display: inline-block;
+  font-size: 3rem;
+}
+/* line 190, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead-links .icon {
+  font-size: 2rem;
+  margin-right: .5rem;
+}
+/* line 194, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead-links a {
+  color: #333;
+  text-decoration: none;
+  transition: all .15s linear;
+}
+/* line 199, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.masthead-links a:hover {
+  color: #08c;
+}
+/*
+ * Footer
+ */
+/* line 208, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.footer {
+  margin-top: 3rem;
+  padding: 3rem 1rem;
+  font-size: 90%;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+/* line 215, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.footer p {
+  margin-bottom: .5rem;
+}
+/* line 219, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.quick-links {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 223, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.quick-links li {
+  display: inline;
+}
+/*
+ * Syntax highlighting
+ */
+/* line 232, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.hll {
+  background-color: #ffffcc;
+}
+/* line 233, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.c {
+  color: #999;
+}
+/* Comment */
+/* line 234, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.err {
+  color: #AA0000;
+  background-color: #ffaaaa;
+}
+/* Error */
+/* line 235, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.k {
+  color: #006699;
+}
+/* Keyword */
+/* line 236, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.o {
+  color: #555555;
+}
+/* Operator */
+/* line 237, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.cm {
+  color: #999;
+}
+/* Comment.Multiline */
+/* Edited to remove italics and make into comment */
+/* line 238, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.cp {
+  color: #009999;
+}
+/* Comment.Preproc */
+/* line 239, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.c1 {
+  color: #999;
+}
+/* Comment.Single */
+/* line 240, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.cs {
+  color: #999;
+}
+/* Comment.Special */
+/* line 241, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gd {
+  background-color: #FFCCCC;
+  border: 1px solid #cc0000;
+}
+/* Generic.Deleted */
+/* line 242, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.ge {
+  font-style: italic;
+}
+/* Generic.Emph */
+/* line 243, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gr {
+  color: #ff0000;
+}
+/* Generic.Error */
+/* line 244, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gh {
+  color: #003300;
+}
+/* Generic.Heading */
+/* line 245, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00cc00;
+}
+/* Generic.Inserted */
+/* line 246, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.go {
+  color: #aaaaaa;
+}
+/* Generic.Output */
+/* line 247, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gp {
+  color: #000099;
+}
+/* Generic.Prompt */
+/* Generic.Strong */
+/* line 249, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gu {
+  color: #003300;
+}
+/* Generic.Subheading */
+/* line 250, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.gt {
+  color: #99cc66;
+}
+/* Generic.Traceback */
+/* line 251, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kc {
+  color: #006699;
+}
+/* Keyword.Constant */
+/* line 252, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kd {
+  color: #006699;
+}
+/* Keyword.Declaration */
+/* line 253, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kn {
+  color: #006699;
+}
+/* Keyword.Namespace */
+/* line 254, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kp {
+  color: #006699;
+}
+/* Keyword.Pseudo */
+/* line 255, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kr {
+  color: #006699;
+}
+/* Keyword.Reserved */
+/* line 256, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.kt {
+  color: #007788;
+}
+/* Keyword.Type */
+/* line 257, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.m {
+  color: #ff6600;
+}
+/* Literal.Number */
+/* line 258, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.s {
+  color: #d44950;
+}
+/* Literal.String */
+/* line 259, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.na {
+  color: #4f9fcf;
+}
+/* Name.Attribute */
+/* line 260, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nb {
+  color: #336666;
+}
+/* Name.Builtin */
+/* line 261, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nc {
+  color: #00AA88;
+}
+/* Name.Class */
+/* line 262, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.no {
+  color: #336600;
+}
+/* Name.Constant */
+/* line 263, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nd {
+  color: #9999ff;
+}
+/* Name.Decorator */
+/* line 264, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.ni {
+  color: #999999;
+}
+/* Name.Entity */
+/* line 265, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.ne {
+  color: #CC0000;
+}
+/* Name.Exception */
+/* line 266, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nf {
+  color: #cc00ff;
+}
+/* Name.Function */
+/* line 267, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nl {
+  color: #9999ff;
+}
+/* Name.Label */
+/* line 268, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nn {
+  color: #00CCFF;
+}
+/* Name.Namespace */
+/* line 269, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nt {
+  color: #2f6f9f;
+}
+/* Name.Tag */
+/* line 270, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.nv {
+  color: #003333;
+}
+/* Name.Variable */
+/* line 271, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.ow {
+  color: #000000;
+}
+/* Operator.Word */
+/* line 272, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.w {
+  color: #bbbbbb;
+}
+/* Text.Whitespace */
+/* line 273, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.mf {
+  color: #ff6600;
+}
+/* Literal.Number.Float */
+/* line 274, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.mh {
+  color: #ff6600;
+}
+/* Literal.Number.Hex */
+/* line 275, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.mi {
+  color: #ff6600;
+}
+/* Literal.Number.Integer */
+/* line 276, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.mo {
+  color: #ff6600;
+}
+/* Literal.Number.Oct */
+/* line 277, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sb {
+  color: #cc3300;
+}
+/* Literal.String.Backtick */
+/* line 278, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sc {
+  color: #cc3300;
+}
+/* Literal.String.Char */
+/* line 279, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sd {
+  color: #CC3300;
+  font-style: italic;
+}
+/* Literal.String.Doc */
+/* line 280, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.s2 {
+  color: #cc3300;
+}
+/* Literal.String.Double */
+/* line 281, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.se {
+  color: #CC3300;
+}
+/* Literal.String.Escape */
+/* line 282, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sh {
+  color: #cc3300;
+}
+/* Literal.String.Heredoc */
+/* line 283, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.si {
+  color: #aa0000;
+}
+/* Literal.String.Interpol */
+/* line 284, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sx {
+  color: #cc3300;
+}
+/* Literal.String.Other */
+/* line 285, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.sr {
+  color: #33aaaa;
+}
+/* Literal.String.Regex */
+/* line 286, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.s1 {
+  color: #cc3300;
+}
+/* Literal.String.Single */
+/* line 287, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.ss {
+  color: #ffcc33;
+}
+/* Literal.String.Symbol */
+/* line 288, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.bp {
+  color: #336666;
+}
+/* Name.Builtin.Pseudo */
+/* line 289, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.vc {
+  color: #003333;
+}
+/* Name.Variable.Class */
+/* line 290, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.vg {
+  color: #003333;
+}
+/* Name.Variable.Global */
+/* line 291, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.vi {
+  color: #003333;
+}
+/* Name.Variable.Instance */
+/* line 292, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.il {
+  color: #ff6600;
+}
+/* Literal.Number.Integer.Long */
+/* line 294, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/fonts.less */
+.css .o,
+.css .o + .nt,
+.css .nt + .nt {
+  color: #999;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22public%2Fassets%2Fless%2Ffonts.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3BAAIA%3BEACE%2CaAAa%2CUAAb%3BEACA%2CSAAS%2CoBAAT%3BEACA%2CSAAS%2C2BAA2B%2COAAO%2C0BACvC%2CsBAAsB%2COAAO%2CaAC7B%2CqBAAqB%2COAAO%2CiBAC5B%2CqBAAqB%2COAAO%2CMAHhC%3BEAIA%2CmBAAA%3BEACA%2CkBAAA%3B%3B%3BAAGF%2CgBAAgB%3BAAAS%2CiBAAiB%3BEACxC%2CaAAa%2CUAAb%3BEACA%2CkBAAA%3BEACA%2CmBAAA%3BEACA%2CWAAA%3BEACA%2CqBAAA%3BEACA%2CwBAAA%3BEACA%2CUAAA%3BEACA%2CkBAAA%3BEACA%2CkBAAA%3BEACA%2CoBAAA%3BEACA%2CoBAAA%3B%3B%3BAAGF%2CoBAAoB%3BEAAU%2CSAAS%2COAAT%3B%3B%3BAAC9B%2CaAAa%3BEAAU%2CSAAS%2COAAT%3B%3B%3B%3B%3B%3BAAQvB%3BAACA%2CCAAC%3BAACD%2CCAAC%3BEACC%2C8BAAA%3BEACA%2C2BAAA%3BEACA%2CsBAAA%3B%3B%3BAAGF%3BEACE%2CeAAA%3B%3BAAQF%2CQANyB%3B%3BEACvB%3BIACE%2CeAAA%3B%3B%3B%3BAAIJ%3BEACE%2CSAAA%3BEACA%2CoBAAA%3BEACA%2CeAAe%2C4BAAf%3BEACA%2CcAAA%3B%3B%3B%3BAAIF%3BAACA%3BAACA%3BAACA%3BEACE%2CeAAe%2CmCAAf%3B%3B%3BAAGF%3BEACE%2CcAAA%3BEACA%2CqBAAA%3B%3B%3BAAEF%2CCAAC%3BEACC%2C0BAAA%3B%3B%3BAAGF%3BAAAI%3BAAAI%3BAAAI%3BEACV%2CiBAAA%3BEACA%2CmBAAA%3BEACA%2CcAAA%3BEACA%2CcAAA%3BEACA%2CuBAAA%3B%3B%3BAAEF%3BEAAK%2CeAAA%3B%3B%3BAACL%3BEAAK%2CiBAAA%3B%3B%3BAACL%3BEAAK%2CiBAAA%3BEAAmB%2CgBAAA%3BEAAkB%2CkBAAA%3B%3B%3BAAC1C%3BEAAK%2CkBAAA%3B%3B%3BAAEL%3BEACE%2CgBAAA%3B%3B%3BAAEF%3BEACE%2CiBAAA%3B%3B%3BAAGF%3BEACE%2CkBAAA%3BEACA%2CmBAAA%3BEACA%2CkBAAA%3BEACA%2CcAAA%3B%3B%3BAAEF%2CUAAW%3BEACT%2CgBAAA%3B%3B%3BAAGF%2CEAAG%3BEACD%2CqBAAA%3B%3B%3B%3BAAIF%2CCAAC%3BAACD%2CEAAE%3BAACF%2CUAAU%3BEACR%2CgBAAA%3B%3B%3B%3B%3B%3BAASF%3BAACA%3BEACE%2CaAAa%2CkBAAkB%2CwBAA%2FB%3BEACA%2CcAAA%3B%3B%3BAAEF%3BEACE%2CgBAAA%3BEACA%2CcAAA%3BEACA%2CcAAA%3BEACA%2CyBAAA%3BEACA%2CoBAAA%3B%3B%3BAAGF%3BEACE%2CcAAA%3BEACA%2CgBAAA%3BEACA%2CgBAAA%3BEACA%2CgBAAA%3BEACA%2CqBAAA%3B%3B%3BAAEF%2CGAAI%3BEACF%2CUAAA%3BEACA%2CcAAA%3BEACA%2C6BAAA%3BEACA%2CSAAA%3B%3B%3BAAEF%3BEACE%2CgBAAA%3BEACA%2CaAAA%3BEACA%2CyBAAA%3B%3B%3BAAEF%2CUAAW%3BEACT%2CgBAAA%3B%3B%3BAAEF%2CUAAW%3BEACT%2CgBAAA%3B%3B%3B%3B%3B%3BAAQF%3BEACE%2CgBAAA%3BEACA%2CiBAAA%3BEACA%2CkBAAA%3B%3B%3B%3B%3B%3BAAQF%3BEACE%2CoBAAA%3BEACA%2C6BAAA%3B%3B%3BAAEF%2CSAAU%3BEACR%2CqBAAA%3B%3B%3BAAEF%2CSAAU%3BEACR%2CqBAAA%3BEACA%2CeAAA%3B%3B%3BAAEF%2CeAAgB%3BEACd%2CeAAA%3BEACA%2CmBAAA%3B%3B%3BAAEF%2CeAAgB%3BEACd%2CWAAA%3BEACA%2CqBAAA%3BEACA%2C2BAAA%3B%3B%3BAAEF%2CeAAgB%2CEAAC%3BEACf%2CWAAA%3B%3B%3B%3B%3B%3BAAQF%3BEACE%2CgBAAA%3BEACA%2CkBAAA%3BEACA%2CcAAA%3BEACA%2CkBAAA%3BEACA%2C0BAAA%3B%3B%3BAAEF%2COAAQ%3BEACN%2CoBAAA%3B%3B%3BAAGF%3BEACE%2CgBAAA%3BEACA%2CcAAA%3B%3B%3BAAEF%2CYAAa%3BEACX%2CeAAA%3B%3B%3B%3B%3B%3BAAQF%3BEAAO%2CyBAAA%3B%3B%3BAACP%3BEAAK%2CWAAA%3B%3B%3B%3BAACL%3BEAAO%2CcAAA%3BEAAgB%2CyBAAA%3B%3B%3B%3BAACvB%3BEAAK%2CcAAA%3B%3B%3B%3BAACL%3BEAAK%2CcAAA%3B%3B%3B%3BAACL%3BEAAM%2CWAAA%3B%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CWAAA%3B%3B%3B%3BAACN%3BEAAM%2CWAAA%3B%3B%3B%3BAACN%3BEAAM%2CyBAAA%3BEAA2B%2CyBAAA%3B%3B%3B%3BAACjC%3BEAAM%2CkBAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CyBAAA%3BEAA2B%2CyBAAA%3B%3B%3B%3BAACjC%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3B%3BAAEN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAK%2CcAAA%3B%3B%3B%3BAACL%3BEAAK%2CcAAA%3B%3B%3B%3BAACL%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAK%2CcAAA%3B%3B%3B%3BAACL%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3BEAAgB%2CkBAAA%3B%3B%3B%3BAACtB%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAACN%3BEAAM%2CcAAA%3B%3B%3B%3BAAEN%2CIAAK%3BAACL%2CIAAK%2CGAAG%3BAACR%2CIAAK%2CIAAI%3BEAAQ%2CWAAA%22%7D */

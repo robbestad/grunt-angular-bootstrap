@@ -1,0 +1,301 @@
+/*
+ * WTF, forms?
+ * Released under MIT and copyright 2014 Mark Otto.
+ * http://wtfforms.com
+ *
+ * Embedded icons from Open Iconic.
+ * Released under MIT and copyright 2014 Waybury.
+ * http://useiconic.com/open
+ */
+/*
+ * Checkboxes and radios
+ */
+/* line 17, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+/* line 24, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  /* Put the input behind the label so it doesn't overlay text */
+}
+/* line 29, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control-indicator {
+  position: absolute;
+  top: .25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 65%;
+  color: #eee;
+  text-align: center;
+  background-color: #eee;
+  background-size: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hover state */
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.control:hover .control-indicator {
+  color: #fff;
+  background-color: #ccc;
+}
+*/
+/* Focus */
+/* line 59, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control input:focus ~ .control-indicator {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+/* Checked state */
+/* line 64, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control input:checked ~ .control-indicator {
+  color: #fff;
+  background-color: #0074d9;
+}
+/* Checkbox modifiers */
+/* line 70, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.checkbox .control-indicator {
+  border-radius: .25rem;
+}
+/* line 73, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.checkbox input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
+}
+/* Radio modifiers */
+/* line 78, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.radio .control-indicator {
+  border-radius: 50%;
+}
+/* line 81, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.radio input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
+}
+/* Alternately, use another character */
+/* line 86, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control-x input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
+}
+/* line 89, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.control-dash input:checked ~ .control-indicator {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K);
+}
+/*
+ * Select
+ */
+/* line 99, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select {
+  position: relative;
+  display: inline-block;
+  color: #555;
+}
+/* line 104, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select select {
+  display: inline-block;
+  margin: 0;
+  padding: .5rem 2.25rem .5rem 1rem;
+  line-height: 1.5;
+  color: #555;
+  background-color: #eee;
+  border: 0;
+  border-radius: .25rem;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* Undo the Firefox inner focus ring */
+/* line 120, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select select:focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+/* Dropdown arrow */
+/* line 125, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select:after {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -0.15rem;
+  pointer-events: none;
+  border-top: .35rem solid;
+  border-right: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+  border-left: .35rem solid transparent;
+}
+/* Hover state */
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.select select:hover {
+  background-color: #ddd;
+}
+*/
+/* Focus */
+/* line 149, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select select:focus {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+/* Active/open */
+/* line 154, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select select:active {
+  color: #fff;
+  background-color: #0074d9;
+}
+/* Hide the arrow in IE10 and up */
+/* line 160, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.select select::-ms-expand {
+  display: none;
+}
+/* Media query to target Firefox only */
+@-moz-document url-prefix() {
+  /* Firefox hack to hide the arrow */
+  /* line 167, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding-right: 1rem;
+  }
+  /* <option> elements inherit styles from <select>, so reset them. */
+  /* line 174, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select option {
+    background-color: white;
+  }
+}
+/* IE9 hack to hide the arrow */
+@media screen and (min-width: 0\0), screen\0 {
+  /* line 184, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select select {
+    z-index: 1;
+    padding: .5rem 1.5rem .5rem 1rem;
+  }
+  /* line 188, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select:after {
+    z-index: 5;
+  }
+  /* line 191, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select:before {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 1.5rem;
+    background-color: #eee;
+  }
+  /* line 202, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+  .select select:hover,
+  .select select:focus,
+  .select select:active {
+    color: #555;
+    background-color: #eee;
+  }
+}
+/*
+ * File
+ */
+/* line 216, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 2.5rem;
+}
+/* line 222, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file input {
+  min-width: 14rem;
+  margin: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+/* line 228, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+  border: .075rem solid #ddd;
+  border-radius: .25rem;
+  box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 247, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file-custom:after {
+  content: "Choose file...";
+}
+/* line 250, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file-custom:before {
+  position: absolute;
+  top: -0.075rem;
+  right: -0.075rem;
+  bottom: -0.075rem;
+  z-index: 6;
+  display: block;
+  content: "Browse";
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  line-height: 1.5;
+  color: #555;
+  background-color: #eee;
+  border: .075rem solid #ddd;
+  border-radius: 0 .25rem .25rem 0;
+}
+/* Focus */
+/* line 268, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.file input:focus ~ .file-custom {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+/*
+ * Control layouts
+ */
+/* line 278, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-stacked {
+  margin: 1rem 0;
+}
+/* line 281, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-stacked .control {
+  display: block;
+}
+/* line 284, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-stacked .control + .control {
+  margin-top: .5rem;
+}
+/* line 288, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-inline {
+  margin: 1rem 0;
+}
+/* line 291, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-inline .control {
+  display: inline-block;
+  height: 1rem;
+}
+/* line 295, /Users/svenanders/Work/robbis/webdev/angularproj1/public/assets/less/forms.less */
+.controls-inline .control + .control {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22public%2Fassets%2Fless%2Fforms.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAgBA%3BEACE%2CkBAAA%3BEACA%2CqBAAA%3BEACA%2CoBAAA%3BEACA%2CWAAA%3BEACA%2CeAAA%3B%3B%3BAAEF%2CQAAS%3BEACP%2CkBAAA%3BEACA%2CUAAA%3BEACA%2CWAAA%3B%3B%3B%3BAAEF%3BEACE%2CkBAAA%3BEACA%2CWAAA%3BEACA%2COAAA%3BEACA%2CcAAA%3BEACA%2CWAAA%3BEACA%2CYAAA%3BEACA%2CiBAAA%3BEACA%2CcAAA%3BEACA%2CWAAA%3BEACA%2CkBAAA%3BEACA%2CsBAAA%3BEACA%2CwBAAA%3BEACA%2CkCAAA%3BEACA%2C4BAAA%3BEACA%2CyBAAA%3BEACA%2CsBAAA%3BEACA%2CqBAAA%3BEACA%2CiBAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAYF%2CQAAS%2CMAAK%2CMAAO%3BEACnB%2CmDAAA%3B%3B%3B%3BAAIF%2CQAAS%2CMAAK%2CQAAS%3BEACrB%2CWAAA%3BEACA%2CyBAAA%3B%3B%3B%3BAAIF%2CSAAU%3BEACR%2CqBAAA%3B%3B%3BAAEF%2CSAAU%2CMAAK%2CQAAS%3BEACtB%2CyzBAAA%3B%3B%3B%3BAAIF%2CMAAO%3BEACL%2CkBAAA%3B%3B%3BAAEF%2CMAAO%2CMAAK%2CQAAS%3BEACnB%2CivBAAA%3B%3B%3B%3BAAIF%2CUAAW%2CMAAK%2CQAAS%3BEACvB%2Cy7BAAA%3B%3B%3BAAEF%2CaAAc%2CMAAK%2CQAAS%3BEAC1B%2C6tBAAA%3B%3B%3B%3B%3B%3BAASF%3BEACE%2CkBAAA%3BEACA%2CqBAAA%3BEACA%2CWAAA%3B%3B%3BAAEF%2COAAQ%3BEACN%2CqBAAA%3BEACA%2CSAAA%3BEACA%2CiCAAA%3BEACA%2CgBAAA%3BEACA%2CWAAA%3BEACA%2CsBAAA%3BEACA%2CSAAA%3BEACA%2CqBAAA%3BEACA%2CeAAA%3BEACA%2CUAAA%3BEACA%2CwBAAA%3BEACA%2CqBAAA%3BEACA%2CgBAAA%3B%3B%3B%3BAAGF%2COAAQ%2COAAM%2CMAAM%3BEAClB%2CkBAAA%3BEACA%2CuBAAA%3B%3B%3B%3BAAGF%2COAAO%3BEACL%2CkBAAA%3BEACA%2CQAAA%3BEACA%2CcAAA%3BEACA%2CqBAAA%3BEACA%2CSAAS%2CEAAT%3BEACA%2CQAAA%3BEACA%2CSAAA%3BEACA%2CoBAAA%3BEACA%2CoBAAA%3BEACA%2CwBAAA%3BEACA%2CsCAAA%3BEACA%2CuCAAA%3BEACA%2CqCAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAWF%2COAAQ%2COAAM%3BEACZ%2CmDAAA%3B%3B%3B%3BAAIF%2COAAQ%2COAAM%3BEACZ%2CWAAA%3BEACA%2CyBAAA%3B%3B%3B%3BAAIF%2COAAQ%2COAAM%3BEACZ%2CaAAA%3B%3B%3BAAIF%3B%3B%3BEAEE%2COAAQ%3BIACN%2CmBAAA%3BIACA%2CeAAe%2CEAAf%3BIACA%2CmBAAA%3B%3B%3B%3BEAIF%2COAAQ%3BIACN%2CuBAAA%3B%3B%3B%3BAAqCJ%3B%3BEA5BE%2COAAQ%3BIACN%2CUAAA%3BIACA%2CgCAAA%3B%3B%3BEAEF%2COAAO%3BIACL%2CUAAA%3B%3B%3BEAEF%2COAAO%3BIACL%2CkBAAA%3BIACA%2CMAAA%3BIACA%2CWAAA%3BIACA%2CSAAA%3BIACA%2CUAAA%3BIACA%2CSAAS%2CEAAT%3BIACA%2CcAAA%3BIACA%2CaAAA%3BIACA%2CsBAAA%3B%3B%3BEAEF%2COAAQ%2COAAM%3BEACd%2COAAQ%2COAAM%3BEACd%2COAAQ%2COAAM%3BIACZ%2CWAAA%3BIACA%2CsBAAA%3B%3B%3B%3B%3B%3B%3BAAUJ%3BEACE%2CkBAAA%3BEACA%2CqBAAA%3BEACA%2CeAAA%3BEACA%2CcAAA%3B%3B%3BAAEF%2CKAAM%3BEACJ%2CgBAAA%3BEACA%2CSAAA%3BEACA%2CwBAAA%3BEACA%2CUAAA%3B%3B%3BAAEF%3BEACE%2CkBAAA%3BEACA%2CMAAA%3BEACA%2CQAAA%3BEACA%2COAAA%3BEACA%2CUAAA%3BEACA%2CcAAA%3BEACA%2CmBAAA%3BEACA%2CgBAAA%3BEACA%2CWAAA%3BEACA%2CsBAAA%3BEACA%2C0BAAA%3BEACA%2CqBAAA%3BEACA%2CqDAAA%3BEACA%2CyBAAA%3BEACA%2CsBAAA%3BEACA%2CqBAAA%3BEACA%2CiBAAA%3B%3B%3BAAEF%2CYAAY%3BEACV%2CSAAS%2CgBAAT%3B%3B%3BAAEF%2CYAAY%3BEACV%2CkBAAA%3BEACA%2CcAAA%3BEACA%2CgBAAA%3BEACA%2CiBAAA%3BEACA%2CUAAA%3BEACA%2CcAAA%3BEACA%2CSAAS%2CQAAT%3BEACA%2CcAAA%3BEACA%2CmBAAA%3BEACA%2CgBAAA%3BEACA%2CWAAA%3BEACA%2CsBAAA%3BEACA%2C0BAAA%3BEACA%2CgCAAA%3B%3B%3B%3BAAIF%2CKAAM%2CMAAK%2CMAAO%3BEAChB%2CmDAAA%3B%3B%3B%3B%3B%3BAASF%3BEACE%2CcAAA%3B%3B%3BAAEF%2CiBAAkB%3BEAChB%2CcAAA%3B%3B%3BAAEF%2CiBAAkB%2CSAAS%3BEACzB%2CiBAAA%3B%3B%3BAAGF%3BEACE%2CcAAA%3B%3B%3BAAEF%2CgBAAiB%3BEACf%2CqBAAA%3BEACA%2CYAAA%3B%3B%3BAAEF%2CgBAAiB%2CSAAS%3BEACxB%2CiBAAA%22%7D */

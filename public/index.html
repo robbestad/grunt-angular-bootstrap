@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href=/assets/ico/favicon.ico">
+
+    <!-- Favicons... -->
+    <!--Touch icon for iOS 2.0+ and Android 2.1+:-->
+    <link rel="apple-touch-icon-precomposed" href="/assets/ico/favicon-152.png">
+    <!--IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/assets/ico/favicon-144.png">
+    <link rel="icon" href="/assets/ico/favicon-32.png" sizes="32x32">
+
+
+    <title>SAR Template</title>
+
+    <meta http-equiv="assets-type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="diy, tegning">
+    <meta name="description" content="SAR Template">
+    <meta property="fb:app_id" content="APP_ID">
+    <meta property="og:title" content="SAR Template">
+    <meta property="og:description" content="SAR Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="APP_URL">
+    <meta property="og:image" content="APP_LOGO">
+    <meta property="og:site_name" content="SAR Template">
+    <meta property="fb:admins" content="SAR Template">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- The app -->
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/assets/js/dist/scripts.min.js"></script>
+
+</head>
+
+<body>
+<div class="app-masthead">
+    <div class="container">
+        <nav class="app-nav">
+            <a class="app-nav-item active" href="#">Home</a>
+            <a class="app-nav-item" href="#">New features</a>
+            <a class="app-nav-item" href="#">Press</a>
+            <a class="app-nav-item" href="#">Contact</a>
+            <a class="app-nav-item" href="#">About</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="app-header">
+        <h1 class="app-title" ng-bind="appName"></h1>
+
+        <p class="lead app-description" ng-bind="appDescription"></p>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-sm-8 app-main">
+
+            <section data-ng-view></section>
+
+        </div>
+        <!-- /.app-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 app-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>About</h4>
+
+                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
+                    fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            <div class="sidebar-module">
+                <h4>Archives</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">January 2014</a></li>
+                    <li><a href="#">December 2013</a></li>
+                    <li><a href="#">November 2013</a></li>
+                    <li><a href="#">October 2013</a></li>
+                    <li><a href="#">September 2013</a></li>
+                    <li><a href="#">August 2013</a></li>
+                    <li><a href="#">July 2013</a></li>
+                    <li><a href="#">June 2013</a></li>
+                    <li><a href="#">May 2013</a></li>
+                    <li><a href="#">April 2013</a></li>
+                    <li><a href="#">March 2013</a></li>
+                    <li><a href="#">February 2013</a></li>
+                </ol>
+            </div>
+            <div class="sidebar-module">
+                <h4>Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.app-sidebar -->
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<div class="app-footer">
+    <p>SAR Template by <a href="https://twitter.com/mdo">@svenardocom</a>.</p>
+
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</div>
+
+
+<!--<script type="text/javascript" src="/lib/angular/angular.js"></script>-->
+<!--<script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>-->
+<!--<script type="text/javascript" src="/lib/angular-resource/angular-resource.min.js"></script>-->
+<!--<script type="text/javascript" src="/lib/angular-i18n/angular-locale_no.js"></script>-->
+
+
+<!--Modules-->
+<!--<script type="text/javascript" src="scripts/app/myApp.js"></script>-->
+
+<!--Services-->
+<!--<script src="Scripts/data/product.js"></script>-->
+<!--<script src="Scripts/app/services/productValue.js"></script>-->
+<!--<script src="Scripts/app/Services/resourceProductDataService.js"></script>-->
+
+<!--Controllers-->
+<!--<script type="text/javascript" src="scripts/app/controllers/controller.js"></script>-->
+<!--<script type="text/javascript" src="scripts/app/controllers/shopController.js"></script>-->
+
+<!--Directives-->
+<!--<!--Additional files-->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script type="text/javascript" src="/assets/js/angular.min.js"></script>-->
+<!--<script type="text/javascript" src="/assets/js/app.min.js"></script>-->
+
+<!--<script async="async" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--<script async="async" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+
+
+</body>
+</html>
