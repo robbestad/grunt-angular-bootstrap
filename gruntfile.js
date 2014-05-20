@@ -94,15 +94,13 @@ module.exports = function (grunt) {
                     'public/assets/js/dist/app.min.js': [
                         'public/scripts/app/myApp.js',
                         'public/scripts/app/**/*.js',
-                        'public/scripts/data/*.js',
                         'public/assets/js/dev/mobilesafari.js'
                     ],
                     'public/assets/js/dist/angular.min.js': [
                         'public/lib/angular/angular.min.js',
                         'public/lib/angular-route/angular-route.min.js',
                         'public/lib/angular-resource/angular-resource.min.js',
-                        'public/lib/angular-i18n/angular-locale_no.js',
-                        'public/assets/js/dev/localforage.js'
+                        'public/lib/angular-i18n/angular-locale_no.js'
                     ],
                     'public/assets/js/dist/scripts.min.js': [
                         'public/assets/js/dev/scripts.js'

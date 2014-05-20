@@ -9,17 +9,8 @@ var myAppNs = myAppNs || {};
 
     myAppNs.myApp.controller('mainController',["$scope", "$rootScope", "$timeout", "$locale", "$route",
         function mainController($scope, $rootScope, $timeout, $locale, $route) {
-            $scope.timeoutHello = "Sample post";
-            var promise = $timeout(function () {
-                $scope.timeoutHello = "Post sample";
-            }, 3500)
 
-            $scope.cancel = function () {
-                $timeout.cancel(promise);
-                console.log("Cancelled the promise!");
-            };
-
-
+            $scope.heading_text = "Getting started";
 
 
         }]);
@@ -34,6 +25,7 @@ var myAppNs = myAppNs || {};
     var data;
     myAppNs.myApp.controller('contactController',["$scope", "$rootScope", "$timeout", "$locale", "$route",
         function contactController($scope, $rootScope, $timeout, $locale, $route) {
+         $scope.heading_text = "Contact";
 
         }]);
 })();

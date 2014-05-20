@@ -10,7 +10,7 @@
 /*
  * Checkboxes and radios
  */
-/* line 17, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 17, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control {
   position: relative;
   display: inline-block;
@@ -18,14 +18,14 @@
   color: #555;
   cursor: pointer;
 }
-/* line 24, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 24, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control input {
   position: absolute;
   opacity: 0;
   z-index: -1;
   /* Put the input behind the label so it doesn't overlay text */
 }
-/* line 29, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 29, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control-indicator {
   position: absolute;
   top: .25rem;
@@ -54,53 +54,53 @@
 }
 */
 /* Focus */
-/* line 59, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 59, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control input:focus ~ .control-indicator {
   box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
 }
 /* Checked state */
-/* line 64, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 64, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control input:checked ~ .control-indicator {
   color: #fff;
   background-color: #0074d9;
 }
 /* Checkbox modifiers */
-/* line 70, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 70, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .checkbox .control-indicator {
   border-radius: .25rem;
 }
-/* line 73, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 73, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .checkbox input:checked ~ .control-indicator {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
 }
 /* Radio modifiers */
-/* line 78, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 78, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .radio .control-indicator {
   border-radius: 50%;
 }
-/* line 81, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 81, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .radio input:checked ~ .control-indicator {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
 }
 /* Alternately, use another character */
-/* line 86, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 86, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control-x input:checked ~ .control-indicator {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjQsMEwwLDEuNGwwLjcsMC43bDEuOCwxLjhMMC43LDUuN0wwLDYuNGwxLjQsMS40bDAuNy0wLjdsMS44LTEuOGwxLjgsMS44bDAuNywwLjdsMS40LTEuNEw3LjEsNS43DQoJTDUuMywzLjlsMS44LTEuOGwwLjctMC43TDYuNCwwTDUuNywwLjdMMy45LDIuNUwyLjEsMC43QzIuMSwwLjcsMS40LDAsMS40LDB6Ii8+DQo8L3N2Zz4NCg==);
 }
-/* line 89, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 89, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .control-dash input:checked ~ .control-indicator {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgOCA4IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDN2Mmg4VjNIMHoiLz4NCjwvc3ZnPg0K);
 }
 /*
  * Select
  */
-/* line 99, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 99, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select {
   position: relative;
   display: inline-block;
   color: #555;
 }
-/* line 104, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 104, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select select {
   display: inline-block;
   margin: 0;
@@ -117,13 +117,13 @@
   appearance: none;
 }
 /* Undo the Firefox inner focus ring */
-/* line 120, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 120, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select select:focus:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 /* Dropdown arrow */
-/* line 125, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 125, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select:after {
   position: absolute;
   top: 50%;
@@ -146,48 +146,48 @@
 }
 */
 /* Focus */
-/* line 149, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 149, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select select:focus {
   box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
 }
 /* Active/open */
-/* line 154, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 154, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select select:active {
   color: #fff;
   background-color: #0074d9;
 }
 /* Hide the arrow in IE10 and up */
-/* line 160, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 160, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .select select::-ms-expand {
   display: none;
 }
 /* Media query to target Firefox only */
 @-moz-document url-prefix() {
   /* Firefox hack to hide the arrow */
-  /* line 167, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 167, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select select {
     text-indent: 0.01px;
     text-overflow: '';
     padding-right: 1rem;
   }
   /* <option> elements inherit styles from <select>, so reset them. */
-  /* line 174, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 174, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select option {
     background-color: white;
   }
 }
 /* IE9 hack to hide the arrow */
 @media screen and (min-width: 0\0), screen\0 {
-  /* line 184, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 184, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select select {
     z-index: 1;
     padding: .5rem 1.5rem .5rem 1rem;
   }
-  /* line 188, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 188, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select:after {
     z-index: 5;
   }
-  /* line 191, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 191, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select:before {
     position: absolute;
     top: 0;
@@ -199,7 +199,7 @@
     width: 1.5rem;
     background-color: #eee;
   }
-  /* line 202, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+  /* line 202, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
   .select select:hover,
   .select select:focus,
   .select select:active {
@@ -210,21 +210,21 @@
 /*
  * File
  */
-/* line 216, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 216, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file {
   position: relative;
   display: inline-block;
   cursor: pointer;
   height: 2.5rem;
 }
-/* line 222, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 222, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file input {
   min-width: 14rem;
   margin: 0;
   filter: alpha(opacity=0);
   opacity: 0;
 }
-/* line 228, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 228, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file-custom {
   position: absolute;
   top: 0;
@@ -244,11 +244,11 @@
   -ms-user-select: none;
   user-select: none;
 }
-/* line 247, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 247, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file-custom:after {
   content: "Choose file...";
 }
-/* line 250, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 250, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file-custom:before {
   position: absolute;
   top: -0.075rem;
@@ -266,35 +266,35 @@
   border-radius: 0 .25rem .25rem 0;
 }
 /* Focus */
-/* line 268, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 268, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .file input:focus ~ .file-custom {
   box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
 }
 /*
  * Control layouts
  */
-/* line 278, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 278, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-stacked {
   margin: 1rem 0;
 }
-/* line 281, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 281, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-stacked .control {
   display: block;
 }
-/* line 284, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 284, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-stacked .control + .control {
   margin-top: .5rem;
 }
-/* line 288, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 288, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-inline {
   margin: 1rem 0;
 }
-/* line 291, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 291, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-inline .control {
   display: inline-block;
   height: 1rem;
 }
-/* line 295, /Users/svenanders/Work/robbis/webdev/grunt-angular-bootstrap/public/assets/less/forms.less */
+/* line 295, /Users/svenanders/Work/robbis/webdev/temp/v2/public/assets/less/forms.less */
 .controls-inline .control + .control {
   margin-left: 1rem;
 }
